@@ -1,0 +1,248 @@
+:root{
+  --color1:#00FFFF;
+  --color2:#00FF00;
+
+
+}
+header, footer, section, hr{
+  padding: 50px 0;
+}
+header{
+  padding: 50px 0;
+  min-width: 200px;
+}
+header, footer{
+  background: var(--color1);
+background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+background: -webkit-linear-gradient(left, var(--color1) 0%,var(--color2) 100%);
+background: linear-gradient(to right, var(--color1) 0%,var(--color2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
+}
+.btn.btn_head{
+  display: block;
+  border: #00FF00;
+  background-color: var(--bs-red);
+  height: 80px;
+  width: 200px;
+  justify-content: left;
+  margin-top: 40px;
+  margin-left: 0px;
+  color: var(--bs-white);
+  transition: all 0.4s ease;
+  justify-items: left;
+}
+.btn.btn_head:hover{
+   background-color:#00FFFF;
+   color: var(--bs-white);
+   transition: all 0.2s ease;
+}
+.header_layer{
+  padding-left: 0%;
+  
+
+  text-align: left;
+}
+.left{
+  display: block;
+  float: left;
+}
+.content{
+  border-radius: 20px;
+  float: right;
+  padding: 0;
+  margin:0;
+  justify-content: right;
+  justify-items: normal;
+}
+@media only screen and (max-width: 600px)
+{
+  .header_layers{
+    font-size: 50%;
+  }
+  .info{
+    font-size: 50%;
+  }
+}
+.color1{
+  color:var(--color1);
+}
+.color2{
+  color:var(--color2);
+}
+.bg1{
+  background-color:var(--color1);
+}
+.bg2{
+  background-color:var(--color2);
+}
+.icons{
+  height: 150px;
+  width: 150px;
+ object-fit: cover;
+  
+}
+
+.center{
+  clear: center;
+}
+
+
+
+
+
+figcaption{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: green;
+  font-size: 100%;
+  clear: inherit;
+}
+.img_gallery{
+  height: 300px;
+  max-width: 100%;
+  margin: 20px;
+  border: 5px solid var(--color2);
+  min-width: 150px;
+}
+.text-center{
+  margin-bottom: 20px;
+}
+hr{
+  background-color: var(--color2);
+ 
+} 
+@media screen and (min-width:370px){
+  img{
+    background-size: cover;
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 150px;
+  }
+  figcaption{
+    font-weight: small;
+  }
+  header{
+    max-width: 100%;
+  }
+  body{
+    font: optional;
+  }
+  .grid_item img{
+position: relative;
+width: 75px;
+height: 75px;
+  }
+  .grid_body{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 80px;
+    grid-template-areas: 20px;
+    text-align: center;
+    border: none;
+  }
+}
+
+.grid{
+  display: grid;
+  
+}
+.grid_body{
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 200px;
+  grid-template-areas: 20px;
+  text-align: center;
+  border: none;
+}
+.grid_item{
+  color: var(--color1);
+  font-size: small;
+  word-wrap:break-word;
+}
+.grid_item img{
+  position: relative;
+  width: 150px;
+height: 150px;
+}
+.grid_item figcaption{
+  clear: left;
+}
+.grid_body_gallery{
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(3, 300px);
+
+  text-align: center;
+  border: none;
+}
+.grid_gallery_items img{
+  margin-left: 200px;
+  position: relative;
+  width: 300px;
+height: 200px;
+object-fit: cover;
+grid-area: img;
+
+}
+.grid_gallery_items figcaption{
+  text-align: center;
+margin-left: 300px;
+}
+.grid_text{
+  text-align: center;
+  color: var(--color1);
+}
+.select {
+  text-align: center;
+}
+.select__item a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+}
+.select__item a:hover{
+  color: wheat;
+}
+.grid__managment{
+  display: grid;
+  grid-template-rows: repeat(4, 150px);
+  grid-template-columns: repeat(5,200px);
+  text-align: center;
+  
+}
+.managment__items img{
+  height: 150px;
+  width: 150px;
+  margin-left: 100px;
+  margin-right: 50px;
+  vertical-align: middle;
+}
+.managment__items{
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
+
+}
+.managment__text{
+  
+ margin-left: 150px;
+  color: #00FF00;
+  font-family: cursive;
+  font-size: medium;
+  justify-items: center;
+
+}
+.grid_service{
+  font-size: x-large;
+  margin: auto;
+  color: red;
+  word-wrap: break-word;
+}
+.grid_service th{
+  color:var(--color2);
+}
+.grid_service tr{
+  margin: 50px;
+}
+:root{
+--font1:Verdana,sans-serif;
+}
